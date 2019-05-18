@@ -1,5 +1,5 @@
 {% set name = "google-cloud-translate" %}
-{% set version = "1.4.0" %}
+{% set version = "1.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d4f3b59f9da155bbb7512fbc1c0fd8c0a99e2542c6620a6e84166e9e4dd987d5
+  sha256: c48efab9c0ff4714fe56f372edd8324867afc72dd9baf0c0e0e22d0c3cdd1333
 
 build:
   number: 0
@@ -18,8 +18,8 @@ requirements:
   host:
     - python
     - pip >=18.1
-    - google-api-core-grpc >=1.9.0
-    - google-cloud-core >=0.29.0
+    - google-api-core-grpc >=1.6.0
+    - google-cloud-core >=1.0.0
     - six >=1.10.0
   run:
     - python
