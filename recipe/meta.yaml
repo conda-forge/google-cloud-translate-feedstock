@@ -1,5 +1,5 @@
 {% set name = "google-cloud-translate" %}
-{% set version = "2.0.1" %}
+{% set version = "3.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4ab89786d62e9d1144cf17687e5244d36482f2159e32177952a683d933c5940b
+  sha256: 6183168465749f007449ef4125356d03cca0114ed49faf7ed64f34ec3edd4fe8
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --verbose"
-  skip: True  # [win and vc<14]
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --verbose
+  skip: true  # [win and vc<14]
 
 requirements:
   host:
@@ -62,7 +62,7 @@ about:
   license: Apache 2.0
   license_family: APACHE
   license_file: LICENSE
-  summary: 'Python Client for Google Cloud Translation'
+  summary: Python Client for Google Cloud Translation
   description: |
     Python Client for Google Cloud Translation
     -------------------------
