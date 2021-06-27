@@ -64,7 +64,7 @@ about:
     Cloud Translation is available as a paid service. See the [Pricing](https://cloud.google.com/translate/pricing) and
     [FAQ](https://cloud.google.com/translate/faq) pages for details.
 
-    - [Client Library Documentation](https://googleapis.github.io/google-cloud-python/latest/translate/usage.html)
+    - [Client Library Documentation](https://googleapis.dev/python/translation/latest/index.html)
     - [Product Documentation](https://cloud.google.com/translate/docs)
 
     Quick Start
@@ -85,8 +85,8 @@ about:
     -----------
     Python == 2.7. Python 2.7 support will be removed on January 1, 2020.
 
-  doc_url: https://googleapis.github.io/google-cloud-python/latest/translate/index.html
-  dev_url: https://github.com/googleapis/google-cloud-python/tree/master/translate
+  doc_url: https://googleapis.dev/python/translation/latest/index.html
+  dev_url: https://github.com/googleapis/python-translate
 
 extra:
   recipe-maintainers:
