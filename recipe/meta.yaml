@@ -52,12 +52,12 @@ test:
     - google.cloud.translate_v3beta1.proto.translation_service_pb2
     - google.cloud.translate_v3beta1.proto.translation_service_pb2_grpc
     - google.cloud.translate_v3beta1.types
+    - google.cloud.translate_v3
     - google.longrunning
     - google.oauth2
     - google.protobuf
     - google.rpc
     - grpc
-    - six
 
 about:
   home: https://github.com/googleapis/google-cloud-python
