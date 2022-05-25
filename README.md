@@ -1,9 +1,9 @@
 About google-cloud-translate
 ============================
 
-Home: https://github.com/googleapis/google-cloud-python
+Home: https://github.com/googleapis/python-translate
 
-Package license: Apache 2.0
+Package license: Apache-2.0
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/google-cloud-translate-feedstock/blob/main/LICENSE.txt)
 
@@ -176,4 +176,5 @@ Feedstock Maintainers
 
 * [@BrentDorsey](https://github.com/BrentDorsey/)
 * [@parthea](https://github.com/parthea/)
+* [@xylar](https://github.com/xylar/)
 
