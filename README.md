@@ -5,7 +5,7 @@ Home: https://github.com/GoogleCloudPlatform/google-cloud-python
 
 Package license: Apache-2.0
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/1.7.1-feedstock/blob/master/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/google-cloud-translate-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python Client for Google Cloud Translation
 
@@ -50,8 +50,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/1.7.1-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6614&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/google-cloud-translate-feedstock?branchName=master">
       </a>
     </td>
   </tr>
