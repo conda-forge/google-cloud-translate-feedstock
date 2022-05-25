@@ -1,66 +1,39 @@
 {% set name = "google-cloud-translate" %}
-{% set version = "1.6.0" %}
+{% set version = "1.7.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6223ffdbbe8177d109e4682b15c88754cfbcce5ea8af79818014726c046db774
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/google-cloud-translate-{{ version }}.tar.gz
+  sha256: 8296a87767ca01251666580aa0d5a5a9a2968b74d90e01ab3901c224bb261433
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --verbose"
-  skip: True  # [win and vc<14]
+  script: {{ PYTHON }} -m pip install . -vv
+  noarch: python
 
 requirements:
   host:
-    - python
-    - pip >=18.1
-    - google-api-core-grpc >=1.6.0
-    - google-cloud-core >=1.0.0
-    - six >=1.10.0
+    - python >=3.4
+    - pip
   run:
-    - python
-    - google-api-core-grpc
-    - google-cloud-core
-    - six
+    - python >=3.4
+    - google-api-core-grpc >=1.31.5,<3.0.0dev,!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0
+    - google-cloud-core >=1.0.3,<3.0dev
 
 test:
   imports:
-    - google.api
-    - google.api_core
-    - google.cloud.client
-    - google.cloud.environment_vars
-    - google.cloud.exceptions
-    - google.cloud.obsolete
-    - google.cloud.operation
     - google.cloud.translate
-    - google.cloud.translate_v2
-    - google.cloud.translate_v2._http
-    - google.cloud.translate_v2.client
-    - google.cloud.translate_v3beta1
-    - google.cloud.translate_v3beta1.gapic
-    - google.cloud.translate_v3beta1.gapic.translation_service_client
-    - google.cloud.translate_v3beta1.gapic.translation_service_client_config
-    - google.cloud.translate_v3beta1.gapic.transports
-    - google.cloud.translate_v3beta1.gapic.transports.translation_service_grpc_transport
-    - google.cloud.translate_v3beta1.proto
-    - google.cloud.translate_v3beta1.proto.translation_service_pb2
-    - google.cloud.translate_v3beta1.proto.translation_service_pb2_grpc
-    - google.cloud.translate_v3beta1.types
-    - google.longrunning
-    - google.oauth2
-    - google.protobuf
-    - google.rpc
-    - grpc
-    - six
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
-  home: https://github.com/googleapis/google-cloud-python
-  license: Apache 2.0
-  license_family: APACHE
+  home: https://github.com/GoogleCloudPlatform/google-cloud-python
+  license: Apache-2.0
   license_file: LICENSE
   summary: 'Python Client for Google Cloud Translation'
   description: |
@@ -100,3 +73,4 @@ about:
 extra:
   recipe-maintainers:
     - BrentDorsey
+    - xylar
