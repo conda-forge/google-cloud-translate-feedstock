@@ -1,5 +1,5 @@
 {% set name = "google-cloud-translate" %}
-{% set version = "3.8.1" %}
+{% set version = "3.8.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/google-cloud-translate-{{ version }}.tar.gz
-  sha256: d60f9b09735e48c9b5ebaaa5354fd9c210bd20c7663e4180b5ac6961f9b1394f
+  sha256: c31296a1143c0d6f780def59d2c3988e6fa84d7b84716e55c3722ee18213050d
 
 build:
   number: 0
