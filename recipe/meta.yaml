@@ -1,5 +1,5 @@
 {% set name = "google-cloud-translate" %}
-{% set version = "3.12.1" %}
+{% set version = "3.13.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/google-cloud-translate-{{ version }}.tar.gz
-  sha256: 661cb8879aa3c63a2f725a3ea68f90199bd354c95ca169cc2e83a5105987d29e
+  sha256: 1f8f4a93a4941304b7250b7f8f0b4789b6eebc543d688f84ddf219439271b3e9
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
     - python >=3.7
     - google-api-core-grpc >=1.34.0,<3.0.0dev,!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,!=2.10.*
     - google-cloud-core >=1.4.4,<3.0.0dev
-    - proto-plus >=1.22.0,<2.0.0dev
+    - proto-plus >=1.22.3,<2.0.0dev
     - protobuf >=3.19.5,<5.0.0dev,!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5
 
 test:
@@ -38,7 +38,7 @@ test:
     - pip
 
 about:
-  home: https://github.com/googleapis/python-translate
+  home: https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-translate
   summary: Google Cloud Translate API client library
   license: Apache-2.0
   license_file: LICENSE
