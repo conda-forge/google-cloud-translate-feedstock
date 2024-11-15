@@ -1,5 +1,5 @@
 {% set name = "google-cloud-translate" %}
-{% set version = "3.17.0" %}
+{% set version = "3.18.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: f27aef79bd0ce78045203c0256f427827e046311406796721153926892818873
+  sha256: bfbff9e1c31a0db6ced7687eb34260e451a030987cdd03f77dbfcbc988edf361
 
 build:
   noarch: python
@@ -27,7 +27,7 @@ requirements:
     - google-cloud-core >=1.4.4,<3.0.0dev
     - grpc-google-iam-v1 >=0.12.4,<1.0.0dev
     # more restrictive version for python 3.13
-    - proto-plus >=1.25.0,<2.0.0dev
+    - proto-plus >=1.22.3,<2.0.0dev
     - protobuf >=3.20.2,<6.0.0dev,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5
 
 test:
