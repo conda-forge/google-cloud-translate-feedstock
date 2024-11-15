@@ -9,36 +9,9 @@ Package license: Apache-2.0
 
 Summary: Google Cloud Translate API client library
 
-Development: https://github.com/googleapis/python-translate
+Development: https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-translate
 
 Documentation: https://googleapis.dev/python/translation/latest/index.html
-
-Python Client for Google Cloud Translation
--------------------------
-
-With [Google Cloud Translation]( https://cloud.google.com/translate/), you can dynamically translate text between
-thousands of language pairs. The Google Cloud Translation API lets websites
-and programs integrate with Google Cloud Translation programmatically. Google
-Cloud Translation is available as a paid service. See the [Pricing](https://cloud.google.com/translate/pricing) and
-[FAQ](https://cloud.google.com/translate/faq) pages for details.
-
-- [Client Library Documentation](https://googleapis.dev/python/translation/latest/index.html)
-- [Product Documentation](https://cloud.google.com/translate/docs)
-
-Quick Start
------------
-
-In order to use this library, you first need to go through the following steps:
-
-1. [Select or create a Cloud Platform project.](https://console.cloud.google.com/project)
-2. [Enable billing for your project.](https://cloud.google.com/billing/docs/how-to/modify-project#enable_billing_for_a_project)
-3. [Enable the Google Cloud Language API.](https://cloud.google.com/natural-language)
-4. [Setup Authentication.](https://googleapis.github.io/google-cloud-python/latest/core/auth.html)
-
-Supported Python Versions
------------
-Python >= 3.7
-
 
 Current build status
 ====================
