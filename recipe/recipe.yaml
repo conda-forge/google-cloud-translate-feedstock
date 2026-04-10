@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: google-cloud-translate
-  version: "3.25.0"
+  version: "3.26.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/google_cloud_translate-${{ version }}.tar.gz
-  sha256: a3401e20e3d18eeab68e15b80faf4f985c6ca21934affea4038b961cd19310de
+  sha256: 74c4c302ea705daa1d7dda095288fd736bb616f943480db34314cd0cd52cc9dd
 
 build:
   number: 0
