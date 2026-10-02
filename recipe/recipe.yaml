@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: google-cloud-translate
-  version: "3.27.0"
+  version: "3.28.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/google_cloud_translate-${{ version }}.tar.gz
-  sha256: 2ae78ef1aa8dbb5ec9767a08eabce34fda7bb45a07ba67ae6e0ead8cfd5f95f7
+  sha256: e5f54346b802751d43f871fc7cd70468b98998308cc7568a480a36a5ef480c0d
 
 build:
   number: 0
@@ -24,16 +24,14 @@ requirements:
     - setuptools
   run:
     - python >=${{ python_min }}
-    - google-api-core >=2.17.1,<3.0.0
-    - google-api-core-grpc
+    - google-api-core-grpc >=2.28.0,<3.0.0
     - google-auth >=2.14.1,<3.0.0,!=2.24.0,!=2.25.0
     - google-cloud-core >=2.0.0,<3.0.0
-    # more restrictive constraint for python >=3.14
+    # tightest of upstream's floors (python >=3.14)
     - grpcio >=1.75.1,<2.0.0
-    # more restrictive constraint for python >=3.13
-    - proto-plus >=1.25.0,<2.0.0
-    - protobuf >=4.25.8,<8.0.0
-    - grpc-google-iam-v1 >=0.14.0,<1.0.0
+    - proto-plus >=1.26.1,<2.0.0
+    - protobuf >=6.33.5,<8.0.0
+    - grpc-google-iam-v1 >=0.14.2,<1.0.0
 
 tests:
   - python:
